@@ -1,0 +1,23 @@
+.gifImages{
+    width: 600px;
+}
+.logos img{
+    width: 80px;
+    object-fit: contain;
+    filter: none;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+.logos img:hover{
+    filter:grayscale();
+}
+.logoItem img{
+    width: 180px;
+    object-fit: contain;
+    filter: none;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+.logoItem img:hover{
+    filter:grayscale();
+}

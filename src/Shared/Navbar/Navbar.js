@@ -18,7 +18,7 @@ const Navbar = () => {
                 <ul tabIndex={0} className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
                     <img src={logo} alt="" className='logo'/>
                     <NavLink to="/"  style={({ isActive }) => isActive ? activeStyle: undefined}>Home</NavLink>
-                    <li><a>Item 3</a></li>
+                    {/* <NavLink to="/about"  style={({ isActive }) => isActive ? activeStyle: undefined} className="mx-4">About</NavLink> */}
                 </ul>
                 </div>
                 <img src={logo} alt="" className='logo hidden lg:block'/>
@@ -26,7 +26,7 @@ const Navbar = () => {
             <div className="navbar-end hidden lg:flex">
                 <ul className="menu menu-horizontal p-0">
                <NavLink to="/"  style={({ isActive }) => isActive ? activeStyle: undefined} className="mx-4">Home</NavLink>
-               <NavLink>About</NavLink>
+               {/* <NavLink to="/about"  style={({ isActive }) => isActive ? activeStyle: undefined} className="mx-4">About</NavLink> */}
                 </ul>
             </div>
            
