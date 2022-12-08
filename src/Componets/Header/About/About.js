@@ -23,7 +23,7 @@ const About = () => {
                 <div>
                 <h1 className="text-5xl font-bold mt-6">Technologies I Love To Use</h1>
                 <p className="py-2">PASSIONATE WEB DEVELOPER WHO WANTS TO EXPLORE EVERY TECH STACK</p>
-                    <div className='mt-5 text-3xl flex gap-3 logos'>
+                    <div className='mt-5 text-3xl flex gap-3 logos justify-center'>
                         <img src={html} alt="" />
                         <img src={css} alt="" />
                         <img src={javaScript} alt="" />
@@ -32,7 +32,7 @@ const About = () => {
                         <img src={react} alt="" />
                         <img src={firebase} alt="" />
                     </div>
-                    <div className='flex gap-3 logoItem'>
+                    <div className='flex gap-3 logoItem justify-center'>
                         <img src={node} alt="" />
                         <img src={express} alt="" />
                         <img src={mongo} alt="" />
