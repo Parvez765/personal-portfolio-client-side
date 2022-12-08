@@ -21,7 +21,7 @@ const About = () => {
             <div className="hero-content flex-col lg:flex-row justify-center items-center">
                 <img src={gif} className="rounded-lg shadow-2xl mx-10 gifImages"/>
                 <div>
-                <h1 className="text-5xl font-bold mt-6">What I Do</h1>
+                <h1 className="text-5xl font-bold mt-6">Technologies I Love To Use</h1>
                 <p className="py-2">PASSIONATE WEB DEVELOPER WHO WANTS TO EXPLORE EVERY TECH STACK</p>
                     <div className='mt-5 text-3xl flex gap-3 logos'>
                         <img src={html} alt="" />

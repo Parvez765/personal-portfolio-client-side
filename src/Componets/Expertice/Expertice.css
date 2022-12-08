@@ -1,0 +1,8 @@
+.progressBar{
+    position: relative;
+    
+    appearance: none;
+    overflow: hidden;
+    height: 18px;
+    border-radius: var(--rounded-box, 1rem);
+}
