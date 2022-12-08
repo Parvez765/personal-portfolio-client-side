@@ -6,7 +6,7 @@ import schoolLogo from "../../assests/SchoolLogo-01.png"
 const Education = () => {
     return (
         <div className='mt-14 container mx-auto mb-8'>
-            <h2 className='text-4xl font-bold mb-8'>Education Summary</h2>
+            <h2 className='text-5xl font-bold mb-14 text-center lg:text-left'>Education Summary</h2>
             <div>
                 <div className='flex items-center'>
                     <img src={nu} alt="" className='w-[100px] mx-16' />
@@ -16,6 +16,7 @@ const Education = () => {
                         <h3 className='text-left text-xl mt-3'>2018-Present</h3>
                     </div>
                 </div>
+                <hr  className='mt-5'/>
                 <div className='flex items-center mt-12'>
                     <img src={collegeLogo} alt="" className='w-[180px] mx-6' />
                     <div>
@@ -24,6 +25,7 @@ const Education = () => {
                         <h3 className='text-left text-xl mt-3'>2015-2017</h3>
                     </div>
                 </div>
+                <hr  className='mt-5'/>
                 <div className='flex items-center mt-12'>
                     <img src={schoolLogo} alt="" className='w-[170px] mx-6' />
                     <div>
