@@ -6,7 +6,7 @@ import schoolLogo from "../../assests/SchoolLogo-01.png"
 const Education = () => {
     return (
         <div className='mt-14 container mx-auto mb-8'>
-            <h2 className='text-5xl font-bold mb-14 text-center lg:text-left'>Education Summary</h2>
+            <h2 className='text-5xl font-bold mb-14 text-center'>Education Summary</h2>
             <div>
                 <div className='flex items-center'>
                     <img src={nu} alt="" className='w-[100px] mx-16' />

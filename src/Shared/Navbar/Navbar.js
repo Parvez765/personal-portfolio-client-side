@@ -26,7 +26,7 @@ const Navbar = () => {
             <div className="navbar-end hidden lg:flex">
                 <ul className="menu menu-horizontal p-0">
                <NavLink to="/"  style={({ isActive }) => isActive ? activeStyle: undefined} className="mx-4">Home</NavLink>
-               {/* <NavLink to="/about"  style={({ isActive }) => isActive ? activeStyle: undefined} className="mx-4">About</NavLink> */}
+               {/* <NavLink to="/about"  style={({ isActive }) => isActive ? activeStyle: undefined} className="mx-4">Projects</NavLink> */}
                 </ul>
             </div>
            

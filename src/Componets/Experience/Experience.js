@@ -30,7 +30,7 @@ const Experience = () => {
             <div className='grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 justify-items-center mb-12'>
                 {
                     experiences.map(experience => <>
-                        <div className="card w-96  bg-white  hover:bg-slate-200 shadow-xl cursor-pointer">
+                        <div className="card w-96  bg-white  hover:bg-slate-200 shadow-xl cur">
                             <div className='flex justify-center items-center'>
                                 <img src={experience.img} alt=""  className=' w-[300px] p-6'/>
                             </div>

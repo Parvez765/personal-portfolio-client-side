@@ -1,0 +1,85 @@
+[
+   
+        {
+            "img": "https://i.ibb.co/ZxJwJ07/buyand-Sell-home-01.png",
+            "id" : 1,
+            "projectName": "Buy and Sell",
+            "description" : "A Full Stack Recommerce Website",
+            "screenShot" : [
+                 "https://i.ibb.co/ZxJwJ07/buyand-Sell-home-01.png",
+                 "https://i.ibb.co/GtSBJHP/buyandsellsignup.png",
+                 "https://i.ibb.co/Srw1cJv/orderpage.png",
+                 "https://i.ibb.co/2tw13ky/buyandsellsellerdashboard.png",
+                 "https://i.ibb.co/FYd4g9q/admin.png",
+                 "https://i.ibb.co/DYGwcNc/adminroute.png"
+            ],
+            "keyFeature" : [
+                "A User Can Login Using Email-Password or Using Google",
+                "Dashboard Created For Buyer, Seller and Admin",
+                "A Seller Can Add Product, Delete Product and Advertise Products at Home Page",
+                "Admin Can Delete Any User he Wants",
+                "Admin Can Verify Buyer as A Seller"
+            ],
+            "technology" : [
+                "ReactJs", "NodeJs" , "MongoDB", "Firebase", "ExpressJs", "HTML", "CSS", "React Hook", "Axios"
+            ],
+            "link" : "https://buyandsell-932a5.web.app/",
+            "clientSide" : "https://github.com/Parvez765/resale-website-client-side-assignment12",
+            "serverSide": "https://github.com/Parvez765/resale-website-server-side-assignment12"
+            
+        },
+        {
+            "img": "https://i.ibb.co/fnJb1bw/tour-House-01.png",
+            "id" : 2,
+            "projectName": "Travels Website",
+            "description" : "A Travels Related Marn Stack website",
+            "screenShot" : [
+                "https://i.ibb.co/N6YwhRQ/travels-01.png",
+               "https://i.ibb.co/f4zjvms/travelsmy-Services-01.png",
+               "https://i.ibb.co/gzhSJqy/login-01.png",
+               "https://i.ibb.co/tbJxYz3/travels-Service-Detail-01.png",
+               "https://i.ibb.co/BTKnKgR/review-01.png",
+               "https://i.ibb.co/z5HVFcQ/travels-Review-01.png"
+
+           ],
+           "keyFeature" : [
+            "Firebased Authentication System Used For Implement Login",
+            "A User Can Add Review And Service What He wants",
+            "An Specific Service Route Has Been Created So That User Can See Specific Service Details",
+            "By Clicking See All Service At Home Page A user Can See All The Service"
+            
+        ],
+        "technology" : [
+            "ReactJs", "NodeJs" , "MongoDB", "Firebase", "ExpressJs", "HTML", "CSS"
+        ],
+        "link" : "https://travelscare-c67b4.web.app/",
+        "clientSide" : "https://github.com/Parvez765/travels-website-clientside-assignment11",
+        "serverSide": "https://github.com/Parvez765/travels-website-serverside-assignment11"
+        
+        },
+        {
+            "img": "https://i.ibb.co/QbC9Y6c/educational-Earth-01.png",
+            "id" : 3,
+            "projectName": "EdTech Website",
+            "description" : "A Simple EdTech Website",
+            "screenShot" : [
+                "https://i.ibb.co/zmLw4G3/ed-Home-01.png",
+               "https://i.ibb.co/940Bs8j/course-Page-01.png",
+               "https://i.ibb.co/dbf8spc/course-Details-01.png",
+               "https://i.ibb.co/JBW0kbL/premium-Access-01.png"
+            ],
+            "keyFeature" : [
+             "By Clicking See All Courses A User Can See All The Course",
+             "A User Can Navigate Course Category Using Side Navigation",
+             "User Can Generate PDF by Clicking Generate PDF Button"
+             
+             
+         ],
+         "technology" : [
+             "ReactJs", "NodeJs" , "MongoDB", "Firebase", "ExpressJs", "HTML", "CSS"
+         ],
+         "link" : "https://educational-website-e9520.web.app/",
+         "clientSide" : "https://github.com/Parvez765/educational-website-clientside-assignment10",
+         "serverSide": "https://github.com/Parvez765/educational-website-serverside-assignment10"
+        }
+]

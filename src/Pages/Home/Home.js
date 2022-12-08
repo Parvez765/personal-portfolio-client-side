@@ -5,6 +5,7 @@ import Expertice from '../../Componets/Expertice/Expertice';
 import About from '../../Componets/Header/About/About';
 
 import Header from '../../Componets/Header/Header';
+import Projects from '../../Componets/Projects/Projects';
 
 const Home = () => {
     return (
@@ -13,7 +14,8 @@ const Home = () => {
             <About/>
             <Expertice/>
             <Education />
-            <Experience/>
+            <Experience />
+            <Projects/>
            
         </div>
     );
