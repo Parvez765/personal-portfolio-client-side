@@ -9,7 +9,7 @@ const Navbar = () => {
         paddingBottom:5
     };
     return (
-        <div className="navbar sticky top-0 container mx-auto">
+        <div className="navbar container mx-auto">
             <div className="navbar-start">
                 <div className="dropdown z-40">
                 <label tabIndex={0} className="btn btn-ghost lg:hidden">
