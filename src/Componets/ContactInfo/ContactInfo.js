@@ -28,23 +28,23 @@ const ContactInfo = () => {
     return (
         <div>
             <h2 className='text-4xl font-bold'>Get In Touch</h2>
-            <p>I would Love To Here From You</p>
+            <p className='mt-10'>I would Love To Here From You</p>
             <form onSubmit={handleOnSubmit}>
-                <div className='flex sm:flex-col-reverse md:flex-col lg:flex-row justify-around items-center  container mx-auto'>
-                    <div  className='text-left text-xl font-bold'>
-                        <label htmlFor="">Name</label>
-                        <input type="text" name="name" id="" className='input input-bordered w-full mt-3 mb-3' placeholder='Enter Your Name' required/>
-                        <label htmlFor="">Email</label>
-                        <input type="email" name="email" id="" className='input input-bordered w-full mt-3 mb-3' placeholder='Enter Your Email' required/>
-                        <label htmlFor="">Phone Number</label>
-                        <input type="tel" name="phone" id="" className='input input-bordered w-full mt-3 mb-3' placeholder='Enter Your Phone Number' required/>
-                        <label htmlFor="">Message</label>
-                        <textarea type="message" name="message" className='input input-bordered w-full mt-3'></textarea>
+                <div className='grid grid-cols-1 lg:grid-cols-2  container mx-auto'>
+                    <div  className='text-center lg:text-left text-xl font-bold'>
+                        <label htmlFor="">Name</label><br/>
+                        <input type="text" name="name" id="" className='input input-bordered w-3/4 lg:w-full mt-3 mb-3' placeholder='Enter Your Name' required/><br/>
+                        <label htmlFor="">Email</label><br/>
+                        <input type="email" name="email" id="" className='input input-bordered w-3/4 lg:w-full mt-3 mb-3' placeholder='Enter Your Email' required/><br/>
+                        <label htmlFor="">Phone Number</label><br/>
+                        <input type="tel" name="phone" id="" className='input input-bordered w-3/4 lg:w-full mt-3 mb-3' placeholder='Enter Your Phone Number' required/><br/>
+                        <label htmlFor="">Message</label><br/>
+                        <textarea type="message" name="message" className='input input-bordered w-3/4 lg:w-full mt-3'></textarea><br/>
                         <input type="submit"className='btn btn-primary' value="Submit" />
                         
                     </div>
                     <div>
-                        <img src={mailGif} alt="" />
+                        <img src={mailGif} alt="" className='hidden lg:block'/>
                     </div>
                 </div>
                

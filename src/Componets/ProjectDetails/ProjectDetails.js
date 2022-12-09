@@ -1,5 +1,7 @@
 import React, { useEffect, useState }  from 'react';
 import { useLoaderData, useParams } from 'react-router-dom';
+import { PhotoProvider, PhotoView } from 'react-photo-view';
+import 'react-photo-view/dist/react-photo-view.css';
 
 const ProjectDetails = () => {
     // const projects = useLoaderData()
@@ -25,33 +27,40 @@ const ProjectDetails = () => {
     return (
         <div className='mt-16'>
             <h2 className='text-2xl font-bold'>ScreenShots of {project.projectName}</h2>
-            <div className='container mx-auto grid grid-cols-3 gap-4 bg-slate-200 drop-shadow-lg p-6 mt-8'>
+            <p className='mb-10'>Click The Photo To See The Full View</p>
+                <PhotoProvider>
+                    <div className='container mx-auto grid sm:grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-3'>
+                                            
+                        {screenShot?.map(screen => (
+                                <PhotoView key={screen.id} src={screen}>
+                                    <img src={screen} alt="" className='shadow-lg'/>
+                                </PhotoView>
+                        ))}
+                    </div>
+                </PhotoProvider>
+            
+            <div className='mt-16 text-center lg:text-left container m-6 mx-auto mb-6'>
+                <h2 className='text-3xl font-bold'>Project Name: {projectName}</h2>
+                <h2 className='text-xl'>Description: {description}</h2>
+            </div>
+            <div className='container mx-auto text-center lg:text-left'>
                 {
-                    screenShot?.map(screen => <>
-                        <img src={screen} alt=""  className='w-[550px]'/>
+                    keyFeature?.map(feature => <>
+                        <li className=''>{feature}</li>
                     </>)
                 }
             </div>
-            <div className='mt-12 bg-white drop-shadow-lg container mx-auto p-12 mb-10'>
-                <h2 className='text-4xl font-bold mb-12'>Project Description</h2>
-                <h2 className='text-3xl font-bold text-left mb-8'>Project Name: {projectName}</h2>
-                <h2 className='text-3xl font-bold text-left mb-8'>Project Description: {description}</h2>
-                <h2 className='text-left text-xl font-bold mb-6'>KeyFeatures</h2>
+            <div className='grid grid-cols-3 lg:grid-cols-9 container mx-auto mt-3 gap-4 justify-center lg:justify-start'>
                 {
-                    keyFeature?.map(feature => <>
-                        <li className='text-left'>{feature}</li>
+                    technology?.map(tech => <>
+                        <button className='btn btn-outline'>{tech}</button>
                     </>)
                 }
-                <div className='grid sm:grid-cols-5 md:grid-cols-5 gap-4 justify-start mt-4'>
-                    {
-                        technology?.map(tech => <>
-                            <button className='btn btn-outline mx-2 hover:btn-primary'>{tech}</button>
-                        </>)
-                    }
-                </div>
-                <p className='text-left mt-5'>Live Link : {link}</p>
-                <p className='text-left mt-5'>Client Side : {clientSide}</p>
-                <p className='text-left mt-5'>Server Side : {serverSide}</p>
+            </div>
+            <div className='text-center lg:text-left mt-6 container mx-auto'>
+                <p><a href={link} target="_blank">Live Link: {link}</a></p>
+                <p><a href={clientSide} target="_blank">Client Side: {clientSide}</a></p>
+                <p><a href={serverSide} target="_blank">Server Side: {serverSide}</a></p>
             </div>
         </div>
     );
