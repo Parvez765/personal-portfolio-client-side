@@ -47,17 +47,20 @@ const ContactInfo = () => {
         <div>
             <h2 className='text-4xl font-bold'>Get In Touch</h2>
             <p className='mb-10'>I would Love To Here From You</p>
-            <div>
+            <div className='grid grid-cols-1 lg:grid-cols-2 justify-center items-center container mx-auto'>
                 <div>
                     <form ref={form} onSubmit={sendEmail}>
-                        <label>Name</label><br/>
-                        <input type="text" name="user_name" className='input input-bordered mb-5'/><br/>
+                        <label className='text-left'>Name</label><br/>
+                        <input type="text" name="user_name" className='input input-bordered mb-5 w-3/4' required/><br/>
                         <label>Email</label><br/>
-                        <input type="email" name="user_email" className='input input-bordered mb-5'/><br/>
+                        <input type="email" name="user_email" className='input input-bordered mb-5 w-3/4' required/><br/>
                         <label>Message</label><br/>
-                        <textarea name="message" className='input input-bordered mb-5'/><br/>
+                        <textarea name="message" className='input input-bordered mb-5 w-3/4' required/><br/>
                         <input type="submit" className='btn btn-primary' value="Send" />
                     </form>
+                </div>
+                <div>
+                    <img src={mailGif} alt="" className='hidden lg:block'/>
                 </div>
            </div>
         </div>
