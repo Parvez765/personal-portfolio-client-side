@@ -42,7 +42,7 @@ const ProjectDetails = () => {
                         <li className='text-left'>{feature}</li>
                     </>)
                 }
-                <div className='flex justify-start mt-4'>
+                <div className='grid sm:grid-cols-5 md:grid-cols-5 gap-4 justify-start mt-4'>
                     {
                         technology?.map(tech => <>
                             <button className='btn btn-outline mx-2 hover:btn-primary'>{tech}</button>
