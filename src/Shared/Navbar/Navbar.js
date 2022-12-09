@@ -9,7 +9,7 @@ const Navbar = () => {
         paddingBottom:5
     };
     return (
-        <div className="navbar bg-base-100 container mx-auto">
+        <div className="navbar bg-base-100 sticky top-0 container mx-auto">
             <div className="navbar-start">
                 <div className="dropdown">
                 <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -18,7 +18,7 @@ const Navbar = () => {
                 <ul tabIndex={0} className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
                     <img src={logo} alt="" className='logo'/>
                     <NavLink to="/"  style={({ isActive }) => isActive ? activeStyle: undefined}>Home</NavLink>
-                    {/* <NavLink to="/about"  style={({ isActive }) => isActive ? activeStyle: undefined} className="mx-4">About</NavLink> */}
+                    <NavLink to="/contact"  style={({ isActive }) => isActive ? activeStyle: undefined} className="mx-4">Contact</NavLink>
                 </ul>
                 </div>
                 <img src={logo} alt="" className='logo hidden lg:block'/>
@@ -26,7 +26,8 @@ const Navbar = () => {
             <div className="navbar-end hidden lg:flex">
                 <ul className="menu menu-horizontal p-0">
                <NavLink to="/"  style={({ isActive }) => isActive ? activeStyle: undefined} className="mx-4">Home</NavLink>
-               {/* <NavLink to="/about"  style={({ isActive }) => isActive ? activeStyle: undefined} className="mx-4">Projects</NavLink> */}
+               <NavLink to="/contact"  style={({ isActive }) => isActive ? activeStyle: undefined} className="mx-4">Contact</NavLink>
+               <NavLink to="/blog"  style={({ isActive }) => isActive ? activeStyle: undefined} className="mx-4">Blog</NavLink>
                 </ul>
             </div>
            

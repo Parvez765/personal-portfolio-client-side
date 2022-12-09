@@ -2,6 +2,8 @@ import { createBrowserRouter } from "react-router-dom";
 import ProjectDetails from "../Componets/ProjectDetails/ProjectDetails";
 
 import Main from "../Layout/Main";
+import Blog from "../Pages/Blog/Blog";
+import Contact from "../Pages/Contact/Contact";
 import Home from "../Pages/Home/Home";
 
 export const router = createBrowserRouter([
@@ -12,15 +14,13 @@ export const router = createBrowserRouter([
             },
             {
                 path: "/project/:id",
-                // loader: () => {
-                //     return fetch("/projects.json")
-                //         .then(res => res.json())
-                //         .then(data =>{
-                            
-                //         })
-                    
-                // },
                 element: <ProjectDetails></ProjectDetails>
+            },
+            {
+                path: "/contact", element: <Contact></Contact>
+            },
+            {
+                path: "/blog", element: <Blog></Blog>
             }
            
         ]

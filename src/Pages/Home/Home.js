@@ -2,6 +2,7 @@ import React from 'react';
 import Education from '../../Componets/Education/Education';
 import Experience from '../../Componets/Experience/Experience';
 import Expertice from '../../Componets/Expertice/Expertice';
+import Footer from '../../Componets/Footer/Footer';
 import About from '../../Componets/Header/About/About';
 
 import Header from '../../Componets/Header/Header';
@@ -15,7 +16,8 @@ const Home = () => {
             <Expertice/>
             <Education />
             <Experience />
-            <Projects/>
+            <Projects />
+            <Footer/>
            
         </div>
     );
