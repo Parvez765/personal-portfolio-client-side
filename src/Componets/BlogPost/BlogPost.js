@@ -5,7 +5,7 @@ import flex from "../../assests/blogImg/flex.png"
 
 const BlogPost = () => {
     return (
-        <div className="card bg-base-100 mx-auto mt-14">
+        <div className="card bg-base-100 mx-auto mt-14 container">
             <div>
                 <figure><img src={react} alt="Album" className='w-full h-[250px] object-contain' /></figure>
             </div>

@@ -25,7 +25,7 @@ const ProjectDetails = () => {
         console.log(project);
 
     return (
-        <div className='mt-16'>
+        <div className='mt-16 px-8'>
             <h2 className='text-2xl font-bold'>ScreenShots of {project.projectName}</h2>
             <p className='mb-10'>Click The Photo To See The Full View</p>
                 <PhotoProvider>
@@ -39,11 +39,11 @@ const ProjectDetails = () => {
                     </div>
                 </PhotoProvider>
             
-            <div className='mt-16 text-center lg:text-left container m-6 mx-auto mb-6'>
+            <div className='mt-16 text-left container m-6 mx-auto mb-6'>
                 <h2 className='text-3xl font-bold'>Project Name: {projectName}</h2>
                 <h2 className='text-xl'>Description: {description}</h2>
             </div>
-            <div className='container mx-auto text-center lg:text-left'>
+            <div className='container mx-auto text-left'>
                 {
                     keyFeature?.map(feature => <>
                         <li className=''>{feature}</li>
@@ -57,10 +57,10 @@ const ProjectDetails = () => {
                     </>)
                 }
             </div>
-            <div className='text-center lg:text-left mt-6 container mx-auto'>
-                <p><a href={link} target="_blank">Live Link: {link}</a></p>
-                <p><a href={clientSide} target="_blank">Client Side: {clientSide}</a></p>
-                <p><a href={serverSide} target="_blank">Server Side: {serverSide}</a></p>
+            <div className='text-left mt-6 container mx-auto'>
+                <li><a href={link} target="_blank">Live Link</a></li>
+                <li><a href={clientSide} target="_blank">Client Side</a></li>
+                <li><a href={serverSide} target="_blank">Server Side</a></li>
             </div>
         </div>
     );
