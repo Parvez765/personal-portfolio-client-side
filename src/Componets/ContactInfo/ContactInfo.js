@@ -30,7 +30,7 @@ const ContactInfo = () => {
             <h2 className='text-4xl font-bold'>Get In Touch</h2>
             <p>I would Love To Here From You</p>
             <form onSubmit={handleOnSubmit}>
-                <div className='flex sm:flex-row-reverse md:flex-col-reverse lg:flex-row justify-around items-center  container mx-auto'>
+                <div className='flex sm:flex-col-reverse md:flex-col lg:flex-row justify-around items-center  container mx-auto'>
                     <div  className='text-left text-xl font-bold'>
                         <label htmlFor="">Name</label>
                         <input type="text" name="name" id="" className='input input-bordered w-full mt-3 mb-3' placeholder='Enter Your Name' required/>

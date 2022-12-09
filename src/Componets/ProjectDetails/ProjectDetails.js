@@ -23,7 +23,7 @@ const ProjectDetails = () => {
         console.log(project);
 
     return (
-        <div>
+        <div className='mt-16'>
             <h2 className='text-2xl font-bold'>ScreenShots of {project.projectName}</h2>
             <div className='container mx-auto grid grid-cols-3 gap-4 bg-slate-200 drop-shadow-lg p-6 mt-8'>
                 {

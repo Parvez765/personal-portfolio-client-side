@@ -5,7 +5,7 @@ const ProjectCard = ({ project, setProjectId }) => {
     // console.log(projectId)
     return (
         <div className="card w-96 bg-base-100 shadow-xl">
-        <figure><img src={project.img} alt="Shoes" /></figure>
+        <figure><img src={project.img} alt="Shoes" className='w-[660px]'/></figure>
         <div className="card-body">
             <h2 className="card-title justify-center">
            {project.projectName}
