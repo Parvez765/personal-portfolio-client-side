@@ -57,10 +57,10 @@ const ProjectDetails = () => {
                     </>)
                 }
             </div>
-            <div className='text-left mt-6 container mx-auto'>
-                <li><a href={link} target="_blank">Live Link</a></li>
-                <li><a href={clientSide} target="_blank">Client Side</a></li>
-                <li><a href={serverSide} target="_blank">Server Side</a></li>
+            <div className='text-left mt-6 flex flex-col lg:flex-row gap-4 container mx-auto mb-4'>
+                <button className='btn btn-primary'><a href={link} target="_blank">Live Link</a></button>
+                <button className='btn btn-primary'><a href={clientSide} target="_blank">Client Side</a></button>
+                <button className='btn btn-primary'><a href={serverSide} target="_blank">Server Side</a></button>
             </div>
         </div>
     );

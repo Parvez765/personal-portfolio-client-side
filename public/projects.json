@@ -46,7 +46,8 @@
             "Firebased Authentication System Used For Implement Login",
             "A User Can Add Review And Service What He wants",
             "An Specific Service Route Has Been Created So That User Can See Specific Service Details",
-            "By Clicking See All Service At Home Page A user Can See All The Service"
+            "By Clicking See All Service At Home Page A user Can See All The Service",
+            "A User Can Also See His Review at a Specific Service given by him"
             
         ],
         "technology" : [
@@ -71,7 +72,9 @@
             "keyFeature" : [
              "By Clicking See All Courses A User Can See All The Course",
              "A User Can Navigate Course Category Using Side Navigation",
-             "User Can Generate PDF by Clicking Generate PDF Button"
+             "User Can Generate PDF by Clicking Generate PDF Button",
+             "Firebase Authetication System has benn implemented for login using Email and Google",
+             "By Clicking get premium access button a user can see the details and price of course but before that he must have to login the site"
              
              
          ],
